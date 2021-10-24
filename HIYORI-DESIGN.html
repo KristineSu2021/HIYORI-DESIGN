@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日和設計</title>
+    <link rel="icon" href="/img/LOGO.ico" type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- hearder 英文字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+
+    <!-- hearder 中文字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+
+
+    <style>
+        body {
+            height: 4000px;
+            background-image: url(/img/soft_wallpaper.png);
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: 'Noto Serif TC', serif;
+            color: rgb(48, 48, 48);
+        }
+
+        /* hearder start */
+        .logo img {
+            width: 200px;
+        }
+
+        .header-buttons {
+            font-family: 'Cinzel', serif;
+            font-size: 14px;
+        }
+
+        .service {
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        .service img {
+            width: 18px;
+            margin-top: -5px;
+            margin-left: 5px;
+        }
+
+        /* hearder end */
+
+        /* main-page start */
+        .main-page {
+            height: 700px;
+            background-image: url(/img/banner_1.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .slogan {
+            font-family: 'Noto Serif TC', serif;
+            color: rgb(48, 48, 48);
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 30px;
+            margin-left: 100px;
+            margin-top: 400px;
+        }
+
+        .slogan_m {
+            font-size: 24px;
+        }
+
+        .scroll-bar {
+            text-decoration: underline;
+            font-family: 'Cinzel', serif;
+            writing-mode: vertical-rl;
+            border-left: 1px solid rgb(192, 192, 192);
+        }
+
+        /* main-page end */
+
+        /* product start */
+        .product_block {
+            overflow: hidden;
+        }
+
+        .product_block_main {
+            font-family: 'Noto Serif TC', serif;
+            color: rgb(48, 48, 48);
+            font-weight: 600;
+            font-size: 36px;
+        }
+
+        .product_block_minor {
+            font-family: 'Noto Serif TC', serif;
+            color: rgb(48, 48, 48);
+            font-weight: 500;
+            font-size: 18px;
+            margin-top: -10px;
+        }
+
+        .product_minor_title {
+            color: rgb(121, 121, 121);
+            font-size: 14px;
+            padding-left: 10px;
+        }
+
+        .product_text {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 14px;
+            color: rgb(121, 121, 121);
+        }
+
+        .more_product a{
+            color: rgb(121, 121, 121);
+            font-family: 'Noto Sans TC', sans-serif;
+            text-decoration: underline;
+            font-size: 14px;
+            text-underline-offset:50%;
+        }
+        /* product end */
+
+        /* banner start */
+        .banner{
+            height: 500px;
+            background-image: url(/img/banner-3.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .banner_slogan{
+            color: rgb(255, 255, 255);
+            line-height: 30px;
+            margin-left: 1000px;
+            margin-top: 100px;
+        }
+        /* banner end */
+
+        /* Service start */
+        .Service_Process{
+            background-color: rgba(255, 255, 255, 0.212);
+            
+        }
+
+        .Service_Process_m{
+            
+        }
+
+        .Service_Process_text{
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 12px;
+            color: rgb(121, 121, 121);
+            margin-top: 180px;
+        }
+
+        .Service_Process_Q a{
+            color: rgb(121, 121, 121);
+            font-family: 'Noto Sans TC', sans-serif;
+            text-decoration: underline;
+            font-size: 14px;
+            text-underline-offset:50%;
+        }
+
+        .Service_Process_number{
+            font-size: 28px;
+        }
+
+        .Service_Process_T{
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        .Service_Process_D{
+            color: rgb(121, 121, 121);
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 14px;
+            margin-left: 45px;
+            margin-top: -25px;
+        }
+        /* Service end */
+
+        /* news start */
+
+        .news_t{
+            font-size: 14px;
+
+        }
+
+        .news_text{
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 12px;
+            color: rgb(121, 121, 121);
+            margin-top: 180px;
+        }
+
+
+
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- logo -->
+            <a class="logo navbar-brand ml-5">
+                <img src="/img/logo (1).png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 選單 -->
+            <div class="collapse navbar-collapse header-buttons mr-5" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="" class="text-dark mr-5">ABOUT&ensp;∨</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="text-dark mr-5">WORKS&ensp;∨</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="" class="text-dark mr-5">WORKFLOW</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="" class="text-dark mr-5">MOVIE</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="" class="text-dark mr-5">CONTACT</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <!-- 線上諮詢按鈕 -->
+                    <div class="service d-flex align-items-center">
+                        <button type="button" class="btn btn-outline-dark btn-sm">線上諮詢<img src="/img/writing.png"
+                                alt=""></button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 首圖 -->
+    <div class="main-page">
+        <div class="slogan">
+            <p>從一個人到一家人<br />家的定義開始轉變<br /></p>
+            <p class="slogan_m">讓設計，開啟家的對話</p>
+        </div>
+        <div class="scroll-bar">
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;SCORLL
+            </p>
+        </div>
+    </div>
+
+    <!--精選案例 -->
+    <div class="product_block mb-5" style="text-align:center;">
+        <div class="row flex-column align-items-center justify-content-center">
+            <div>
+                <p class="product_block_main mt-5">精選案例</p>
+                <p class="product_block_minor">來自家人情感溫度的故事，成就每一個日和的經典案例</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="mycard col-lg-4 col-md-6 col-12">
+                <div class="mycard_1 img-wrap" style="width:100%;height:200px;overflow: hidden;">
+                    <img src="/img/j01.jpg" alt="" style="width:100%;height:100%;object-fit: cover;">
+                </div>
+
+                <div class="mt-3">
+                    <div class="mt-3">
+                        <span>依山</span>
+                        <span class="product_minor_title">Breezy Mountain</span>
+                    </div>
+                    <div class="product_text mt-2">
+                        <p>順應自然的生活美學，展現在簡樸素雅的私人居所中</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mycard col-lg-4 col-md-6 col-12">
+                <div class="img-wrap" style="width:100%;height:200px;overflow: hidden;">
+                    <img src="/img/j02.jpg" alt="" style="width: 100%;height:100%;object-fit: cover;">
+                </div>
+
+                <div class="mt-3">
+                    <div class="mt-3">
+                        <span>漫日</span>
+                        <span class="product_minor_title">Wandering day</span>
+                    </div>
+                    <div class="product_text mt-2">
+                        <p>從兩個人變成一家人，在合宜的生活尺度，只想與你 漫步暖喣日光</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mycard col-lg-4 col-md-6 col-12">
+                <div class="img-wrap" style="width:100%;height:200px;overflow: hidden;">
+                    <img src="/img/j03.jpg" alt="" style="width: 100%;height:100%;object-fit: cover;">
+                </div>
+
+                <div class="mt-3">
+                    <div class="mt-3">
+                        <span>下課後</span>
+                        <span class="product_minor_title">After School</span>
+                    </div>
+                    <div class="product_text mt-2">
+                        <p>因小孩的聚集，產生不一樣的共享空間，進而增加都會區的互動連結</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mycard col-lg-4 col-md-6 col-12">
+                <div class="img-wrap" style="width:100%;height:200px;overflow: hidden;">
+                    <img src="/img/j04.jpg" alt="" style="width: 100%;height:100%;object-fit: cover;">
+                </div>
+
+                <div class="mt-3">
+                    <div class="mt-3">
+                        <span>遇見</span>
+                        <span class="product_minor_title">Encounter</span>
+                    </div>
+                    <div class="product_text mt-2">
+                        <p>維持情感互動的溫度，回到認識時的曖昧，遇見對方都是情感增溫的時刻</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mycard col-lg-4 col-md-6 col-12">
+                <div class="img-wrap" style="width:100%;height:200px;overflow: hidden;">
+                    <img src="/img/j05.jpg" alt="" style="width: 100%;height:100%;object-fit: cover;">
+                </div>
+
+                <div class="mt-3">
+                    <div class="mt-3">
+                        <span>停泊</span>
+                        <span class="product_minor_title">Stay</span>
+                    </div>
+                    <div class="product_text mt-2">
+                        <p>回家，應該是一場舒心地心靈洗滌之旅</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mycard col-lg-4 col-md-6 col-12">
+                <div class="img-wrap" style="width:100%;height:200px;overflow: hidden;">
+                    <img src="/img/j06.jpg" alt="" style="width: 100%;height:100%;object-fit: cover;">
+                </div>
+
+                <div class="mt-3">
+                    <div class="mt-3">
+                        <span>近日</span>
+                        <span class="product_minor_title">Chasing daylight</span>
+                    </div>
+                    <div class="product_text mt-2">
+                        <p>和諧也寬廣的活動空間，打開空間，讓陽光進來，心、也更加寬廣了</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center justify-content-center mt-5">
+            <div class="more_product col-lg-4 col-md-6 col-12">
+                <a href="">更多設計案例&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;▸</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner mt-5">
+        <div class="banner_slogan">
+            <p>在山野和城市的邊境之間，<br />與層層疊疊青山與藍天輕風相伴，我們要以最無拘無束的姿態自在生活。<br /></p>
+        </div>
+    </div>
+
+    <!-- 服務流程 -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="Service_Process col-lg-4 col-md-6 col-12">
+                <div class="Service_Process_1">
+                    <h1>服務流程</h1>
+                    <p class="Service_Process_m mt-3">將室內設計的服務流程系統化，<br />提供專業有效率的服務體驗。</p>
+                </div>
+                <div>
+                    <p class="Service_Process_text">您有對於日和設計的疑問嗎？<br />如有任何問題歡迎填寫表單與我們聯繫，<br />將會有專人為您服務喔！</p>
+                </div>
+                <div class="Service_Process_Q">
+                    <a href="">立即諮詢日和設計&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;▸</a>
+                </div>
+            </div>
+
+            <div class="Service_Process col-lg-4 col-md-6 col-12">
+                <div>
+                    <span class="Service_Process_number">01</span>
+                    <span class="Service_Process_T">設計諮詢<br />|</span>
+                    <p class="Service_Process_D">經客服彙整基本需求後，由設計師電訪，安排諮詢會議</p>
+                </div>
+                <div>
+                    <span class="Service_Process_number">02</span>
+                    <span class="Service_Process_T">現場會勘<br />|</span>
+                    <p class="Service_Process_D">約至案件現場進行細部會勘<br />&emsp;</p>
+                </div>
+                <div>
+                    <span class="Service_Process_number">03</span>
+                    <span class="Service_Process_T">設計提案<br />|</span>
+                    <p class="Service_Process_D">設計概念發想+平面圖配置建議，另有提案簡報的說明</p>
+                </div>
+                <div>
+                    <span class="Service_Process_number">04</span>
+                    <span class="Service_Process_T">簽訂設計合約<br />|</span>
+                    <p class="Service_Process_D">簽訂設計合約後，開始進行詳細的空間規劃與細部圖面繪製</p>
+                </div>
+            </div>
+
+            <div class="Service_Process col-lg-4 col-md-6 col-12">
+                <div>
+                    <span class="Service_Process_number">05</span>
+                    <span class="Service_Process_T">工程估價<br />|</span>
+                    <p class="Service_Process_D">依據施工圖進行工程估價及施工時程<br />&emsp;</p>
+                </div>
+                <div>
+                    <span class="Service_Process_number">06</span>
+                    <span class="Service_Process_T">簽訂工程合約<br />|</span>
+                    <p class="Service_Process_D">依據合約預算及工期按圖施作，並由工程師確實監造及紀錄</p>
+                </div>
+                <div>
+                    <span class="Service_Process_number">07</span>
+                    <span class="Service_Process_T">完工交屋<br />|</span>
+                    <p class="Service_Process_D">完工清潔驗收、完工拍攝<br />&emsp;</p>
+                </div>
+                <div>
+                    <span class="Service_Process_number">08</span>
+                    <span class="Service_Process_T">客戶滿意度調查／結案<br />|</span>
+                    <p class="Service_Process_D">為了確保每個案場的服務品質，客服單位會再跟業主了解案件執行時的滿意度</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 最新消息 -->
+    <div class="container mt-5 mb-2" style="text-align:center;">
+        <div class="row flex-column align-items-center justify-content-center">
+            <div>
+                <p class="product_block_main mt-5">日和最新資訊</p>
+                <p class="product_block_minor">掌握每一則關於日和的相關訊息及獲獎紀錄</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="mycard col-lg-4 col-md-6 col-12">
+                <div class="mycard_1 img-wrap" style="width:100%;height:260px;overflow: hidden;">
+                    <img src="/img/s02.jpg" alt="" style="width:100%;height:100%;object-fit: cover;">
+                </div>
+
+                <div class="mt-3">
+                    <div class="news_t mt-3">
+                        <span>義大利A Design Award銀獎&ensp;|&ensp;AFTER SCHOOL</span>
+                    </div>
+                    <div class="news_text mt-2">
+                        <p>很高興受到A'design評審的青睞，＜下課後 After School＞這個作品獲得義大利A Design Award銀獎感到萬分榮幸之外，也讓我們...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mycard col-lg-4 col-md-6 col-12">
+                <div class="img-wrap" style="width:100%;height:260px;overflow: hidden;">
+                    <img src="/img/s03.jpg" alt="" style="width: 100%;height:100%;object-fit: cover;">
+                </div>
+
+                <div class="mt-3">
+                    <div class="news_t mt-3">
+                        <span>媒體分享&ensp;|&ensp;國際媒體Home Journal</span>
+                    </div>
+                    <div class="news_text mt-2">
+                        <p>感謝國際媒體Home Journal的分享，這個家從以前到現在都非常多家庭詢問，因著現代人生活型態的改變而衍生出 親子共享空...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mycard col-lg-4 col-md-6 col-12">
+                <div class="img-wrap" style="width:100%;height:260px;overflow: hidden;">
+                    <img src="/img/s01.jpg" alt="" style="width: 100%;height:100%;object-fit: cover;">
+                </div>
+
+                <div class="mt-3">
+                    <div class="news_t mt-3">
+                        <span>日本 GOOD DESIGN 入圍作品分享&ensp;|&ensp;AFTER SCHOOL</span>
+                    </div>
+                    <div class="news_text mt-2">
+                        <p>一對疼愛女兒的夫妻，希望女兒在下課後能跟同儕在充滿愛的空間中成長、玩耍，也希望在這個空間可以創造更多與孩子們的回憶...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
