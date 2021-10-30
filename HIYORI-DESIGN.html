@@ -28,7 +28,7 @@
 
     <style>
         body {
-            height: 4000px;
+            height: 100%;
             background-image: url(/img/soft_wallpaper.png);
             background-repeat: repeat;
             background-attachment: fixed;
@@ -57,14 +57,11 @@
             margin-left: 5px;
         }
 
-        /* hearder end */
-
         /* main-page start */
         .main-page {
             height: 700px;
             background-image: url(/img/banner_1.jpg);
             background-repeat: no-repeat;
-            background-attachment: fixed;
             background-position: center;
             background-size: cover;
             display: flex;
@@ -91,8 +88,6 @@
             writing-mode: vertical-rl;
             border-left: 1px solid rgb(192, 192, 192);
         }
-
-        /* main-page end */
 
         /* product start */
         .product_block {
@@ -133,14 +128,12 @@
             font-size: 14px;
             text-underline-offset:50%;
         }
-        /* product end */
-
+        
         /* banner start */
         .banner{
             height: 500px;
             background-image: url(/img/banner-3.jpg);
             background-repeat: no-repeat;
-            background-attachment: fixed;
             background-position: center;
             background-size: cover;
             display: flex;
@@ -148,21 +141,15 @@
         }
 
         .banner_slogan{
-            color: rgb(255, 255, 255);
-            line-height: 30px;
+            color: rgb(48, 48, 48);
             margin-left: 1000px;
-            margin-top: 100px;
+            margin-top: 30px;
+            text-align:right;
         }
-        /* banner end */
-
+        
         /* Service start */
         .Service_Process{
-            background-color: rgba(255, 255, 255, 0.212);
-            
-        }
-
-        .Service_Process_m{
-            
+            background-color: rgba(255, 255, 255, 0.212);            
         }
 
         .Service_Process_text{
@@ -196,7 +183,38 @@
             margin-left: 45px;
             margin-top: -25px;
         }
-        /* Service end */
+
+        /* about start */
+
+        .about{
+            margin-top: 100px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .about img{
+            width: 100%;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        .aboutText{
+            margin-top: 50px;
+        }
+
+        .aboutText_1{
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+        .aboutText_2{
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 12px;
+            line-height: 25px;
+        }
 
         /* news start */
 
@@ -212,16 +230,88 @@
             margin-top: 180px;
         }
 
+        /* footer */
+        .footer{
+            height: 300px;
+            background-image: url(/img/rockywall.png);
+            background-repeat: repeat;
+            margin-top: 80px;
+            border-top: 1px solid rgb(197, 197, 197);
 
+            
+        }
 
+        .footerLogo{
+            border-bottom: 1px solid rgb(197, 197, 197);
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .footerText{
+            margin-top: 20px;
+            margin-left: 65px;
+        }
+
+        .footerText p{
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 12px;
+            color: rgb(121, 121, 121);
+            line-height: 5px;
+            margin-top: 20px;
+        }
+
+        .footerIco{
+            margin-left: 65px;
+        }
+
+        .footerRight{
+            margin-top: 75px;
+        }
+
+        .footerRight a{
+            color: rgb(48, 48, 48);
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 30px;
+        }
+
+        .footerPlace{
+            margin-left: 400px;
+        }
+
+        .footerPlace_2{
+            color: rgb(121, 121, 121);
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 14px;
+            margin-top: 10px;
+            margin-left: 465px;
+        }
+
+        .footerMap{
+            margin-left: 180px;
+        }
+
+        .footerEnd{
+            background-color: rgb(48, 48, 48);
+            height: 50px;
+        }
         
+        .footerEnd_text{
+            color: rgb(121, 121, 121);
+            font-family: 'Noto Sans TC', sans-serif;
+            text-align:right;
+            line-height: 5px;
+            font-size: 12px;
+            margin-top: 12px;
+        }       
 
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light">
             <!-- logo -->
             <a class="logo navbar-brand ml-5">
                 <img src="/img/logo (1).png" alt="">
@@ -274,7 +364,7 @@
     </div>
 
     <!--精選案例 -->
-    <div class="product_block mb-5" style="text-align:center;">
+    <div class="product_block mb-3" style="text-align:center;">
         <div class="row flex-column align-items-center justify-content-center">
             <div>
                 <p class="product_block_main mt-5">精選案例</p>
@@ -295,7 +385,7 @@
                         <span>依山</span>
                         <span class="product_minor_title">Breezy Mountain</span>
                     </div>
-                    <div class="product_text mt-2">
+                    <div class="product_text mt-1">
                         <p>順應自然的生活美學，展現在簡樸素雅的私人居所中</p>
                     </div>
                 </div>
@@ -311,7 +401,7 @@
                         <span>漫日</span>
                         <span class="product_minor_title">Wandering day</span>
                     </div>
-                    <div class="product_text mt-2">
+                    <div class="product_text mt-1">
                         <p>從兩個人變成一家人，在合宜的生活尺度，只想與你 漫步暖喣日光</p>
                     </div>
                 </div>
@@ -327,13 +417,13 @@
                         <span>下課後</span>
                         <span class="product_minor_title">After School</span>
                     </div>
-                    <div class="product_text mt-2">
+                    <div class="product_text mt-1">
                         <p>因小孩的聚集，產生不一樣的共享空間，進而增加都會區的互動連結</p>
                     </div>
                 </div>
             </div>
 
-            <div class="mycard col-lg-4 col-md-6 col-12">
+            <div class="mycard col-lg-4 col-md-6 col-12 mt-2">
                 <div class="img-wrap" style="width:100%;height:200px;overflow: hidden;">
                     <img src="/img/j04.jpg" alt="" style="width: 100%;height:100%;object-fit: cover;">
                 </div>
@@ -343,13 +433,13 @@
                         <span>遇見</span>
                         <span class="product_minor_title">Encounter</span>
                     </div>
-                    <div class="product_text mt-2">
+                    <div class="product_text mt-1">
                         <p>維持情感互動的溫度，回到認識時的曖昧，遇見對方都是情感增溫的時刻</p>
                     </div>
                 </div>
             </div>
 
-            <div class="mycard col-lg-4 col-md-6 col-12">
+            <div class="mycard col-lg-4 col-md-6 col-12 mt-2">
                 <div class="img-wrap" style="width:100%;height:200px;overflow: hidden;">
                     <img src="/img/j05.jpg" alt="" style="width: 100%;height:100%;object-fit: cover;">
                 </div>
@@ -359,13 +449,13 @@
                         <span>停泊</span>
                         <span class="product_minor_title">Stay</span>
                     </div>
-                    <div class="product_text mt-2">
+                    <div class="product_text mt-1">
                         <p>回家，應該是一場舒心地心靈洗滌之旅</p>
                     </div>
                 </div>
             </div>
 
-            <div class="mycard col-lg-4 col-md-6 col-12">
+            <div class="mycard col-lg-4 col-md-6 col-12 mt-2">
                 <div class="img-wrap" style="width:100%;height:200px;overflow: hidden;">
                     <img src="/img/j06.jpg" alt="" style="width: 100%;height:100%;object-fit: cover;">
                 </div>
@@ -375,7 +465,7 @@
                         <span>近日</span>
                         <span class="product_minor_title">Chasing daylight</span>
                     </div>
-                    <div class="product_text mt-2">
+                    <div class="product_text mt-1">
                         <p>和諧也寬廣的活動空間，打開空間，讓陽光進來，心、也更加寬廣了</p>
                     </div>
                 </div>
@@ -383,16 +473,16 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row align-items-center justify-content-center mt-5">
-            <div class="more_product col-lg-4 col-md-6 col-12">
+    <div class="container" style="text-align:center;">
+        <div class="row align-items-center justify-content-center">
+            <div class="more_product col-lg-4 col-md-6 col-12 mb-5 mt-3">
                 <a href="">更多設計案例&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;▸</a>
             </div>
         </div>
     </div>
 
     <!-- banner -->
-    <div class="banner mt-5">
+    <div class="banner">
         <div class="banner_slogan">
             <p>在山野和城市的邊境之間，<br />與層層疊疊青山與藍天輕風相伴，我們要以最無拘無束的姿態自在生活。<br /></p>
         </div>
@@ -461,6 +551,22 @@
             </div>
         </div>
     </div>
+
+    <!-- 日和設計 -->
+    <div class="container-fluid about">
+        <div class="row about">
+            <div class="col-lg-8">
+                <img src="/img/p01.jpg" alt="">                
+            </div>
+            <div class="col-lg-4 aboutText">
+                <h2>日和設計</h2>
+                <p>成立於2007年．夏天</p>
+                <p class="aboutText_1">給您最高品質的保證<br />連續四年通過國際ISO9001認證<br />連續兩年通過ISO 9001:2015品質管理系統國際認證</p>
+                <p class="aboutText_2">從一個人到一家人，家的定義開始轉變，我們透過設計拉近人與人彼此的距離，<br />成為家人情感溫度的橋樑，我們體貼每位成員的獨特，凝聚一群人的同質，找到<br />「家」的生活價值。<br />
+                以空間對話為核心，替家人、朋友、孩子、寵物創造舒適自由的共生環境，重視<br />家庭的成長與互動，用分享愛的溫度，為家族打造體貼的公共空間。</p>
+            </div>
+        </div>
+    </div>
     
     <!-- 最新消息 -->
     <div class="container mt-5 mb-2" style="text-align:center;">
@@ -521,11 +627,61 @@
         </div>
     </div>
 
+    <!-- footer -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="footerLogo">
+                    <img src="/img/logo (1).png" alt="" style="width: 150px;">
+                </div>
+                <div class="footerText">
+                    <h6>聯絡資訊</h6>
+                    <p>服務時間&emsp;周一至周五 09:00 - 18:00</p>
+                    <p>連絡電話&emsp;02-2703-0318</p>
+                    <p>電子信箱&emsp;service@twcreative.net</p>
+                </div>
+                <div class="footerIco">
+                    <img src="/img/facebook.png" alt="" style="width: 25px;" class="mr-2">
+                    <img src="/img/ig2.png" alt="" style="width: 25px;"class="mr-2"> 
+                    <img src="/img/line.png" alt="" style="width: 25px;"class="mr-2">
+                    <img src="/img/wechat1.png" alt="" style="width: 25px;"class="mr-1">
+                    <img src="/img/icon_pinterest.png" alt="" style="width: 35px;">
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 footerRight">
+                <div class="footerPlace">
+                    <a href="" style="text-decoration: underline;">台北</a>
+                    <a href="">竹北</a>
+                    <a href="">台中</a>
+                    <a href="">高雄</a>
+                </div>
+                <div class="footerPlace_2">
+                    <p>台北市大安區安和路二段32巷19號</p>
+                </div>
+                <div class="footerMap">
+                    <img src="/img/map.png" alt="" style="width: 500px;">
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-
-
+    <div class="container-fluid footerEnd">
+        <div class="row">
+            <div class="col-lg-6 col-12 flex-row">
+                <div>
+                    <img src="/img/1bff8a1e92a01266.png" alt="" style="width: 150px;filter: brightness(100);margin-left: 50px;margin-top: 3px;">
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 footerEnd_text">
+                <div>
+                    <p>#室內設計 #居家設計 #新成屋 #極簡風 #現代風 #簡約風 #裝潢改造 #丹麥室內設計 #軟裝 #豪宅 #親子宅</p>
+                </div>
+                <div>
+                    <p>採用全球最先進SSL 256bit傳輸加密機制 建議使用Chrome、Firefox、Safari最新版本瀏覽 Design by WebTech 網頁設計</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
